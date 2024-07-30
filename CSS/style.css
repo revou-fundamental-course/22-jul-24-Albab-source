@@ -5,10 +5,7 @@ body{
 }
 
 main{
-    max-width: 100%;
-    position: absolute;
-    left: 10%;
-    right: 10%;
+    
 
 }
 
@@ -19,6 +16,7 @@ main{
     left: 0px;
     top: 0px;
     z-index: -1;
+    filter: brightness(50%); /* Menambahkan filter gelap */
  }
 
 .nav{
@@ -81,6 +79,12 @@ main{
     -webkit-text-fill-color: transparent;
 }
 
+.header h3:hover {
+    cursor: pointer;
+    animation-name: heartbeat;
+
+}
+
 .header p {
     color: rgb(107, 103, 103);
     margin-top: 10px;
@@ -89,15 +93,20 @@ main{
     font-weight: 700;
 }
 
-/* -----Section----- */
+/* -----Home----- */
 
-.section1{
+.home{
+    max-width: 100%;
+    left: 10%;
+    right: 10%;
+}
+.home-content{
     display: flex;
     align-items: space-beet;
     margin-inline: 50px;
 }
 
-.section1 article{
+.home-content article{
     flex: 1;
     margin-right: 50px;
 }
@@ -114,6 +123,12 @@ main{
     width: 100%;
     height: 300px;
     border-radius: 18px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Menambahkan box shadow */
+    transition: box-shadow 0.3s ease; /* Menambahkan transisi */
+}
+
+.image:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Box shadow saat hover */
 }
 
 .image-caption{
