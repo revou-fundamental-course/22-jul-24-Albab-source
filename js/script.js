@@ -26,3 +26,34 @@ showIndex(0);
 
 // Mulai auto-slide setiap 10 detik
 setInterval(autoSlide, 10000);
+
+// ====Form Validation
+
+function formValidation(event) {
+    event.preventDefault(); // Mencegah form submission default
+
+    let firstName = document.getElementById('firstName').value.trim();
+    let lastName = document.getElementById('lastName').value.trim();
+    let formSelect = document.getElementById('formSelect').value; // Asumsikan id 'formSelect' untuk elemen select
+    let errorMessages = [];
+
+    // Pengecekan form value
+    if (firstName === "") {
+        errorMessages.push("Nama depan harus diisi");
+    }
+    if (lastName === "") {
+        errorMessages.push("Nama belakang harus diisi");
+    }
+    if (formSelect === "") {
+        errorMessages.push("Pilihan harus dipilih");
+    }
+
+    if (errorMessages.length > 0) {
+        alert(errorMessages.join("\n"));
+    } else {
+        alert("Form berhasil dikirim");
+        document.getElementById('formContact').reset();
+    }
+}
+
+document.getElementById("form-submit").addEventListener("click", formValidation);

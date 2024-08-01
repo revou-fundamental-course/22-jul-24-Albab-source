@@ -6,7 +6,7 @@
 <body>
     <nav class="nav">
         <div class="nav-icon">
-            LOGOS
+            <i>Travel</i>
         </div>
         <div class="nav-item">
             <a href="dashboard.html">Home</a>
@@ -15,51 +15,91 @@
         </div>
     </nav>
     <main>
-        <img src="image/cover/cover1.jpeg" alt="" class="cover">
-        <img src="image/cover/cover2.jpeg" alt="" class="cover">
-        <img src="image/cover/cover3.jpeg" alt="" class="cover">
-        <img src="image/cover/cover4.jpeg" alt="" class="cover">
-        <section class="home">
-            <header class="header">
-                <h3>YOUR TRUSTED TRAVEL</h3>
-                <p>Your Happiness is My Happiness</p>
-            </header>
-            <section class="home-content">
-                <article>
-                    <div >
-                        <img src="image/banner/image.jpeg" alt="" class="image">
-                        <p class="image-caption">"Liburan jadi menyenangkan bersama Travel Aganku..."</p>
-                    </div>
-                    <div class="image-author">
-                        <img src="https://via.placeholder.com/50" alt="Author Image">
-                        <div>
-                            <strong>Florence Hughes</strong><br>
-                            Ibu Rumah Tangga, 28
+        <section>
+            <img src="assets/cover/cover1.jpeg" alt="" class="cover">
+            <img src="assets/cover/cover2.jpeg" alt="" class="cover">
+            <img src="assets/cover/cover3.jpeg" alt="" class="cover">
+            <img src="assets/cover/cover4.jpeg" alt="" class="cover">
+            <section class="home">
+                <header class="header">
+                    <h3>YOUR TRUSTED TRAVEL</h3>
+                    <p>Your Happiness is My Happiness</p>
+                </header>
+                <div class="home-content">
+                    <article>
+                        <div >
+                            <img src="assets/banner/image.jpeg" alt="" class="image">
+                            <p class="image-caption">"Liburan jadi menyenangkan bersama Travel Aganku..."</p>
                         </div>
-                    </div>
-                </article>
-                <div class="form-contact">
-                    <h2>Contact Us</h2>
-                    <p>Sales akan menghubungi anda 1x24 jam setelah data kami terima.</p>
-                    <form action="/action_page.php">
-                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
-                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                        <select>
-                            <option value="">What are you interested in?</option>
-                            <option value="option1">Option 1</option>
-                            <option value="option2">Option 2</option>
-                        </select>
-                    
-                        <input type="submit" value="Submit">
-                    </form>
-                </div>  
+                        <div class="image-author">
+                            <img src="https://via.placeholder.com/50" alt="Author Image">
+                            <div>
+                                <strong>Florence Hughes</strong><br>
+                                Ibu Rumah Tangga, 28
+                            </div>
+                        </div>
+                    </article>
+                    <div class="form-contact">
+                        <h2>Contact Us</h2>
+                        <p>Sales akan menghubungi anda 1x24 jam setelah data kami terima.</p>
+                        <form id="formContact">
+                            <input type="text" id="firstName" name="firstname" placeholder="Your name..">
+                            <input type="text" id="lastName" name="lastname" placeholder="Your last name..">
+                            <select id="formSelect">
+                                <option value="">What are you interested in?</option>
+                                <option value="option1">Option 1</option>
+                                <option value="option2">Option 2</option>
+                            </select>
+                            <input type="text" id="error" value ="Please fill in the form" readonly>
+                            <input id="form-submit" type="submit">
+                        </form>
+                    </div>  
+                </div>
             </section>
         </section>
+        <section class="card">
+            <div class="card-containt">
+                <div class="features">
+                    <h3>Mengapa Memilih Kami untuk Petualangan Anda?</h3>
+                    <ul>
+                        <li><span>1</span> Paket perjalanan yang disesuaikan dengan kebutuhan dan minat Anda.</li>
+                        <li><span>2</span> Pemandu wisata lokal berpengalaman untuk pengalaman budaya yang otentik.</li>
+                        <li><span>3</span> Jaminan harga terbaik dengan layanan pelanggan 24/7.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
         <section class="package">
-            <h3>Our Package</h3>
-            <div class="package-item"></div>
-            <div class="package-item"></div>
-            <div class="package-item"></div>
+            <div class="package-content">
+                <h3>Our Package</h3>
+                <p>Temukan pengalaman perjalanan tak terlupakan dengan paket wisata kami. Dari keindahan alam Bali, keunikan budaya Jepang, hingga kemewahan modern Singapura - kami menawarkan petualangan yang sesuai dengan keinginan Anda.</p>
+                <div class="package-items">
+                    <div class="package-item">
+                        <img src="assets/package/bali.jpeg">
+                        <div class="package-item-content">
+                            <h4>Bali</h4>
+                            <p>Travel dan wisata di Bali, kunjungi cagar budaya dan kuliner yang menarik</p>
+                            <a href="#" class="btn-selengkapnya">Selengkapnya</a>
+                        </div>
+                    </div>
+                    <div class="package-item">
+                        <img src="assets/package/japan.jpeg">
+                        <div class="package-item-content">
+                            <h4>Japan</h4>
+                            <p>Travel dan wisata di Japan, kunjungi cagar budaya dan kuliner yang menarik</p>
+                            <a href="#" class="btn-selengkapnya">Selengkapnya</a>
+                        </div>
+                    </div>
+                    <div class="package-item">
+                        <img src="assets/package/singapore.jpeg">
+                        <div class="package-item-content">
+                            <h4>Singapore</h4>
+                            <p>Travel dan wisata di Singapore, kunjungi cagar budaya dan kuliner yang menarik</p>
+                            <a href="#" class="btn-selengkapnya">Selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <footer></footer>
