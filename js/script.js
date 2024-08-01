@@ -21,20 +21,20 @@ function autoSlide() {
     plusIndex(1);
 }
 
-// Inisialisasi slide pertama
+// slide pertama
 showIndex(0);
 
 // Mulai auto-slide setiap 10 detik
 setInterval(autoSlide, 10000);
 
-// ====Form Validation
+// ====Form Validation====
 
 function formValidation(event) {
-    event.preventDefault(); // Mencegah form submission default
+    event.preventDefault(); 
 
     let firstName = document.getElementById('firstName').value.trim();
     let lastName = document.getElementById('lastName').value.trim();
-    let formSelect = document.getElementById('formSelect').value; // Asumsikan id 'formSelect' untuk elemen select
+    let formSelect = document.getElementById('formSelect').value;
     let errorMessages = [];
 
     // Pengecekan form value
