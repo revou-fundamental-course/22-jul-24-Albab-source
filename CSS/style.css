@@ -1,7 +1,8 @@
 body{
     background-color: rgb(159, 180, 180); 
     margin: 0;
-    padding: 0; /* Tambahkan ini */
+    padding: 0;
+    font-family: arial, sans-serif;
  }
  
  main{
@@ -304,7 +305,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: calc(100% - 200px); /* Tinggi kartu dikurangi tinggi gambar */
+    height: calc(100% - 200px);
 }
 
 .package-item h4 {
@@ -318,23 +319,17 @@ body{
     margin: 0;
     flex-grow: 1;
     overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 3; /* Batasi jumlah baris teks */
-    -webkit-box-orient: vertical;
 }
 
 .btn-selengkapnya {
     display: inline-block;
-    color: #007bff;
+    color: #232324;
     text-decoration: none;
     font-weight: normal;
     font-size: 14px;
     margin-top: 10px;
     align-self: flex-start;
-}
-
-.btn-selengkapnya::after {
-    content: ' →';
+    font-size: 14px;
 }
 
 .btn-selengkapnya:hover {
